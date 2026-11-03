@@ -1,0 +1,6 @@
+* text=auto eol=lf
+networks/internet2/snapshot/configs/* -text
+networks/internet2/upstream/* -text
+networks/*/LICENSE -text
+networks/*/licenses/* -text
+*.zip -text
