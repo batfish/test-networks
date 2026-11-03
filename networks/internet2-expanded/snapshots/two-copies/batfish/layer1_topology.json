@@ -1,0 +1,784 @@
+{
+  "edges": [
+    {
+      "node1": {
+        "hostname": "c0000-atla-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      },
+      "node2": {
+        "hostname": "c0000-chic-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0000-chic-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      },
+      "node2": {
+        "hostname": "c0000-atla-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0000-atla-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      },
+      "node2": {
+        "hostname": "c0000-clev-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0000-clev-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      },
+      "node2": {
+        "hostname": "c0000-atla-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0000-atla-re0",
+        "interfaceName": "GigabitEthernet0/2"
+      },
+      "node2": {
+        "hostname": "c0000-hous-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0000-hous-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      },
+      "node2": {
+        "hostname": "c0000-atla-re0",
+        "interfaceName": "GigabitEthernet0/2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0000-atla-re0",
+        "interfaceName": "GigabitEthernet0/3"
+      },
+      "node2": {
+        "hostname": "c0000-newy-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0000-newy-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      },
+      "node2": {
+        "hostname": "c0000-atla-re0",
+        "interfaceName": "GigabitEthernet0/3"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0000-atla-re0",
+        "interfaceName": "GigabitEthernet0/4"
+      },
+      "node2": {
+        "hostname": "c0000-wash-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0000-wash-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      },
+      "node2": {
+        "hostname": "c0000-atla-re0",
+        "interfaceName": "GigabitEthernet0/4"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0000-atla-re0",
+        "interfaceName": "GigabitEthernet0/5"
+      },
+      "node2": {
+        "hostname": "c0001-newy-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0001-newy-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      },
+      "node2": {
+        "hostname": "c0000-atla-re0",
+        "interfaceName": "GigabitEthernet0/5"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0000-chic-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      },
+      "node2": {
+        "hostname": "c0000-clev-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0000-clev-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      },
+      "node2": {
+        "hostname": "c0000-chic-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0000-chic-re0",
+        "interfaceName": "GigabitEthernet0/2"
+      },
+      "node2": {
+        "hostname": "c0000-kans-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0000-kans-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      },
+      "node2": {
+        "hostname": "c0000-chic-re0",
+        "interfaceName": "GigabitEthernet0/2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0000-chic-re0",
+        "interfaceName": "GigabitEthernet0/3"
+      },
+      "node2": {
+        "hostname": "c0000-newy-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0000-newy-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      },
+      "node2": {
+        "hostname": "c0000-chic-re0",
+        "interfaceName": "GigabitEthernet0/3"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0000-chic-re0",
+        "interfaceName": "GigabitEthernet0/4"
+      },
+      "node2": {
+        "hostname": "c0000-wash-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0000-wash-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      },
+      "node2": {
+        "hostname": "c0000-chic-re0",
+        "interfaceName": "GigabitEthernet0/4"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0000-clev-re0",
+        "interfaceName": "GigabitEthernet0/2"
+      },
+      "node2": {
+        "hostname": "c0000-newy-re0",
+        "interfaceName": "GigabitEthernet0/2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0000-newy-re0",
+        "interfaceName": "GigabitEthernet0/2"
+      },
+      "node2": {
+        "hostname": "c0000-clev-re0",
+        "interfaceName": "GigabitEthernet0/2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0000-clev-re0",
+        "interfaceName": "GigabitEthernet0/3"
+      },
+      "node2": {
+        "hostname": "c0000-wash-re0",
+        "interfaceName": "GigabitEthernet0/2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0000-wash-re0",
+        "interfaceName": "GigabitEthernet0/2"
+      },
+      "node2": {
+        "hostname": "c0000-clev-re0",
+        "interfaceName": "GigabitEthernet0/3"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0000-hous-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      },
+      "node2": {
+        "hostname": "c0000-kans-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0000-kans-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      },
+      "node2": {
+        "hostname": "c0000-hous-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0000-hous-re0",
+        "interfaceName": "GigabitEthernet0/2"
+      },
+      "node2": {
+        "hostname": "c0000-losa-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0000-losa-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      },
+      "node2": {
+        "hostname": "c0000-hous-re0",
+        "interfaceName": "GigabitEthernet0/2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0000-kans-re0",
+        "interfaceName": "GigabitEthernet0/2"
+      },
+      "node2": {
+        "hostname": "c0000-salt-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0000-salt-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      },
+      "node2": {
+        "hostname": "c0000-kans-re0",
+        "interfaceName": "GigabitEthernet0/2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0000-losa-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      },
+      "node2": {
+        "hostname": "c0000-salt-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0000-salt-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      },
+      "node2": {
+        "hostname": "c0000-losa-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0000-losa-re0",
+        "interfaceName": "GigabitEthernet0/2"
+      },
+      "node2": {
+        "hostname": "c0000-seat-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0000-seat-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      },
+      "node2": {
+        "hostname": "c0000-losa-re0",
+        "interfaceName": "GigabitEthernet0/2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0000-losa-re0",
+        "interfaceName": "GigabitEthernet0/3"
+      },
+      "node2": {
+        "hostname": "c0000-wash-re0",
+        "interfaceName": "GigabitEthernet0/3"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0000-wash-re0",
+        "interfaceName": "GigabitEthernet0/3"
+      },
+      "node2": {
+        "hostname": "c0000-losa-re0",
+        "interfaceName": "GigabitEthernet0/3"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0000-newy-re0",
+        "interfaceName": "GigabitEthernet0/3"
+      },
+      "node2": {
+        "hostname": "c0000-wash-re0",
+        "interfaceName": "GigabitEthernet0/4"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0000-wash-re0",
+        "interfaceName": "GigabitEthernet0/4"
+      },
+      "node2": {
+        "hostname": "c0000-newy-re0",
+        "interfaceName": "GigabitEthernet0/3"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0000-salt-re0",
+        "interfaceName": "GigabitEthernet0/2"
+      },
+      "node2": {
+        "hostname": "c0000-seat-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0000-seat-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      },
+      "node2": {
+        "hostname": "c0000-salt-re0",
+        "interfaceName": "GigabitEthernet0/2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0001-atla-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      },
+      "node2": {
+        "hostname": "c0001-chic-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0001-chic-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      },
+      "node2": {
+        "hostname": "c0001-atla-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0001-atla-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      },
+      "node2": {
+        "hostname": "c0001-clev-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0001-clev-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      },
+      "node2": {
+        "hostname": "c0001-atla-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0001-atla-re0",
+        "interfaceName": "GigabitEthernet0/2"
+      },
+      "node2": {
+        "hostname": "c0001-hous-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0001-hous-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      },
+      "node2": {
+        "hostname": "c0001-atla-re0",
+        "interfaceName": "GigabitEthernet0/2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0001-atla-re0",
+        "interfaceName": "GigabitEthernet0/3"
+      },
+      "node2": {
+        "hostname": "c0001-newy-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0001-newy-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      },
+      "node2": {
+        "hostname": "c0001-atla-re0",
+        "interfaceName": "GigabitEthernet0/3"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0001-atla-re0",
+        "interfaceName": "GigabitEthernet0/4"
+      },
+      "node2": {
+        "hostname": "c0001-wash-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0001-wash-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      },
+      "node2": {
+        "hostname": "c0001-atla-re0",
+        "interfaceName": "GigabitEthernet0/4"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0001-chic-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      },
+      "node2": {
+        "hostname": "c0001-clev-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0001-clev-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      },
+      "node2": {
+        "hostname": "c0001-chic-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0001-chic-re0",
+        "interfaceName": "GigabitEthernet0/2"
+      },
+      "node2": {
+        "hostname": "c0001-kans-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0001-kans-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      },
+      "node2": {
+        "hostname": "c0001-chic-re0",
+        "interfaceName": "GigabitEthernet0/2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0001-chic-re0",
+        "interfaceName": "GigabitEthernet0/3"
+      },
+      "node2": {
+        "hostname": "c0001-newy-re0",
+        "interfaceName": "GigabitEthernet0/2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0001-newy-re0",
+        "interfaceName": "GigabitEthernet0/2"
+      },
+      "node2": {
+        "hostname": "c0001-chic-re0",
+        "interfaceName": "GigabitEthernet0/3"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0001-chic-re0",
+        "interfaceName": "GigabitEthernet0/4"
+      },
+      "node2": {
+        "hostname": "c0001-wash-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0001-wash-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      },
+      "node2": {
+        "hostname": "c0001-chic-re0",
+        "interfaceName": "GigabitEthernet0/4"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0001-clev-re0",
+        "interfaceName": "GigabitEthernet0/2"
+      },
+      "node2": {
+        "hostname": "c0001-newy-re0",
+        "interfaceName": "GigabitEthernet0/3"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0001-newy-re0",
+        "interfaceName": "GigabitEthernet0/3"
+      },
+      "node2": {
+        "hostname": "c0001-clev-re0",
+        "interfaceName": "GigabitEthernet0/2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0001-clev-re0",
+        "interfaceName": "GigabitEthernet0/3"
+      },
+      "node2": {
+        "hostname": "c0001-wash-re0",
+        "interfaceName": "GigabitEthernet0/2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0001-wash-re0",
+        "interfaceName": "GigabitEthernet0/2"
+      },
+      "node2": {
+        "hostname": "c0001-clev-re0",
+        "interfaceName": "GigabitEthernet0/3"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0001-hous-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      },
+      "node2": {
+        "hostname": "c0001-kans-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0001-kans-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      },
+      "node2": {
+        "hostname": "c0001-hous-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0001-hous-re0",
+        "interfaceName": "GigabitEthernet0/2"
+      },
+      "node2": {
+        "hostname": "c0001-losa-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0001-losa-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      },
+      "node2": {
+        "hostname": "c0001-hous-re0",
+        "interfaceName": "GigabitEthernet0/2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0001-kans-re0",
+        "interfaceName": "GigabitEthernet0/2"
+      },
+      "node2": {
+        "hostname": "c0001-salt-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0001-salt-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      },
+      "node2": {
+        "hostname": "c0001-kans-re0",
+        "interfaceName": "GigabitEthernet0/2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0001-losa-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      },
+      "node2": {
+        "hostname": "c0001-salt-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0001-salt-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      },
+      "node2": {
+        "hostname": "c0001-losa-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0001-losa-re0",
+        "interfaceName": "GigabitEthernet0/2"
+      },
+      "node2": {
+        "hostname": "c0001-seat-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0001-seat-re0",
+        "interfaceName": "GigabitEthernet0/0"
+      },
+      "node2": {
+        "hostname": "c0001-losa-re0",
+        "interfaceName": "GigabitEthernet0/2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0001-losa-re0",
+        "interfaceName": "GigabitEthernet0/3"
+      },
+      "node2": {
+        "hostname": "c0001-wash-re0",
+        "interfaceName": "GigabitEthernet0/3"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0001-wash-re0",
+        "interfaceName": "GigabitEthernet0/3"
+      },
+      "node2": {
+        "hostname": "c0001-losa-re0",
+        "interfaceName": "GigabitEthernet0/3"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0001-newy-re0",
+        "interfaceName": "GigabitEthernet0/4"
+      },
+      "node2": {
+        "hostname": "c0001-wash-re0",
+        "interfaceName": "GigabitEthernet0/4"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0001-wash-re0",
+        "interfaceName": "GigabitEthernet0/4"
+      },
+      "node2": {
+        "hostname": "c0001-newy-re0",
+        "interfaceName": "GigabitEthernet0/4"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0001-salt-re0",
+        "interfaceName": "GigabitEthernet0/2"
+      },
+      "node2": {
+        "hostname": "c0001-seat-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "c0001-seat-re0",
+        "interfaceName": "GigabitEthernet0/1"
+      },
+      "node2": {
+        "hostname": "c0001-salt-re0",
+        "interfaceName": "GigabitEthernet0/2"
+      }
+    }
+  ]
+}

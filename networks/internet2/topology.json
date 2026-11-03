@@ -1,0 +1,103 @@
+{
+  "nodes": [
+    "atla-re0",
+    "chic-re0",
+    "clev-re0",
+    "hous-re0",
+    "kans-re0",
+    "losa-re0",
+    "newy-re0",
+    "salt-re0",
+    "seat-re0",
+    "wash-re0"
+  ],
+  "edges": [
+    [
+      "atla-re0",
+      "chic-re0"
+    ],
+    [
+      "atla-re0",
+      "clev-re0"
+    ],
+    [
+      "atla-re0",
+      "hous-re0"
+    ],
+    [
+      "atla-re0",
+      "newy-re0"
+    ],
+    [
+      "atla-re0",
+      "wash-re0"
+    ],
+    [
+      "chic-re0",
+      "clev-re0"
+    ],
+    [
+      "chic-re0",
+      "kans-re0"
+    ],
+    [
+      "chic-re0",
+      "newy-re0"
+    ],
+    [
+      "chic-re0",
+      "wash-re0"
+    ],
+    [
+      "clev-re0",
+      "newy-re0"
+    ],
+    [
+      "clev-re0",
+      "wash-re0"
+    ],
+    [
+      "hous-re0",
+      "kans-re0"
+    ],
+    [
+      "hous-re0",
+      "losa-re0"
+    ],
+    [
+      "kans-re0",
+      "salt-re0"
+    ],
+    [
+      "losa-re0",
+      "salt-re0"
+    ],
+    [
+      "losa-re0",
+      "seat-re0"
+    ],
+    [
+      "losa-re0",
+      "wash-re0"
+    ],
+    [
+      "newy-re0",
+      "wash-re0"
+    ],
+    [
+      "salt-re0",
+      "seat-re0"
+    ]
+  ],
+  "derivation": {
+    "source_sha256": "9d807b78eadeb6f627df9b45ed641ab9418746343794533970c7c8ff6485ac79",
+    "source_rows": 215,
+    "interface_circuits": 108,
+    "circuits_missing_reverse_entry": 1,
+    "router_edges": 19,
+    "changes": [
+      "Collapse parallel interface circuits between the same routers.",
+      "Discard interface names; do not infer bandwidth or routing policy."
+    ]
+  }
+}

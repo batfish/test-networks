@@ -1,0 +1,1702 @@
+{
+  "kind": "derived-generated-snapshot",
+  "base_graph_sha256": "dd6173e5152b2c3f6199a7f5ad62bf6b6f3a13d8fea9501d47c8d04e593bdfb8",
+  "generator_sha256": "efbf0bf4cccac0c9bf715b17afacecb7f825f251af7c00eb74454cfd6cb748e3",
+  "parameters": {
+    "copies": 2,
+    "join": "random",
+    "seed": 0,
+    "gateway": "atla-re0",
+    "prefixes_per_node": 1,
+    "max_paths": 16
+  },
+  "counts": {
+    "nodes": 20,
+    "physical_links": 39,
+    "intercopy_links": 1,
+    "directed_bgp_sessions": 78,
+    "originated_prefixes": 20,
+    "components": 1
+  },
+  "modeling": {
+    "preserved": [
+      "Base graph adjacency inside every copy."
+    ],
+    "changed": [
+      "Add documented inter-copy links.",
+      "Assign new node names, ASNs, router IDs, and interface addresses.",
+      "Generate fresh single-hop eBGP and synthetic service /32 origins."
+    ],
+    "not_preserved": [
+      "Original router configuration, IS-IS, iBGP, BGP policies, and external advertisements.",
+      "Interface circuit multiplicity, bandwidth, and geographical distances."
+    ]
+  },
+  "nodes": {
+    "c0000-atla-re0": {
+      "copy": 0,
+      "base_node": "atla-re0",
+      "asn": 4200000000,
+      "router_id": "172.16.0.1",
+      "prefixes": [
+        "10.0.0.1/32"
+      ],
+      "interfaces": [
+        {
+          "node": "c0000-atla-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.0/31",
+          "remote": "c0000-chic-re0",
+          "peer_ip": "198.18.0.1",
+          "remote_as": 4200000001
+        },
+        {
+          "node": "c0000-atla-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.2/31",
+          "remote": "c0000-clev-re0",
+          "peer_ip": "198.18.0.3",
+          "remote_as": 4200000002
+        },
+        {
+          "node": "c0000-atla-re0",
+          "interface": "GigabitEthernet0/2",
+          "address": "198.18.0.4/31",
+          "remote": "c0000-hous-re0",
+          "peer_ip": "198.18.0.5",
+          "remote_as": 4200000003
+        },
+        {
+          "node": "c0000-atla-re0",
+          "interface": "GigabitEthernet0/3",
+          "address": "198.18.0.6/31",
+          "remote": "c0000-newy-re0",
+          "peer_ip": "198.18.0.7",
+          "remote_as": 4200000006
+        },
+        {
+          "node": "c0000-atla-re0",
+          "interface": "GigabitEthernet0/4",
+          "address": "198.18.0.8/31",
+          "remote": "c0000-wash-re0",
+          "peer_ip": "198.18.0.9",
+          "remote_as": 4200000009
+        },
+        {
+          "node": "c0000-atla-re0",
+          "interface": "GigabitEthernet0/5",
+          "address": "198.18.0.10/31",
+          "remote": "c0001-newy-re0",
+          "peer_ip": "198.18.0.11",
+          "remote_as": 4200000016
+        }
+      ]
+    },
+    "c0000-chic-re0": {
+      "copy": 0,
+      "base_node": "chic-re0",
+      "asn": 4200000001,
+      "router_id": "172.16.0.2",
+      "prefixes": [
+        "10.0.0.2/32"
+      ],
+      "interfaces": [
+        {
+          "node": "c0000-chic-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.1/31",
+          "remote": "c0000-atla-re0",
+          "peer_ip": "198.18.0.0",
+          "remote_as": 4200000000
+        },
+        {
+          "node": "c0000-chic-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.12/31",
+          "remote": "c0000-clev-re0",
+          "peer_ip": "198.18.0.13",
+          "remote_as": 4200000002
+        },
+        {
+          "node": "c0000-chic-re0",
+          "interface": "GigabitEthernet0/2",
+          "address": "198.18.0.14/31",
+          "remote": "c0000-kans-re0",
+          "peer_ip": "198.18.0.15",
+          "remote_as": 4200000004
+        },
+        {
+          "node": "c0000-chic-re0",
+          "interface": "GigabitEthernet0/3",
+          "address": "198.18.0.16/31",
+          "remote": "c0000-newy-re0",
+          "peer_ip": "198.18.0.17",
+          "remote_as": 4200000006
+        },
+        {
+          "node": "c0000-chic-re0",
+          "interface": "GigabitEthernet0/4",
+          "address": "198.18.0.18/31",
+          "remote": "c0000-wash-re0",
+          "peer_ip": "198.18.0.19",
+          "remote_as": 4200000009
+        }
+      ]
+    },
+    "c0000-clev-re0": {
+      "copy": 0,
+      "base_node": "clev-re0",
+      "asn": 4200000002,
+      "router_id": "172.16.0.3",
+      "prefixes": [
+        "10.0.0.3/32"
+      ],
+      "interfaces": [
+        {
+          "node": "c0000-clev-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.3/31",
+          "remote": "c0000-atla-re0",
+          "peer_ip": "198.18.0.2",
+          "remote_as": 4200000000
+        },
+        {
+          "node": "c0000-clev-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.13/31",
+          "remote": "c0000-chic-re0",
+          "peer_ip": "198.18.0.12",
+          "remote_as": 4200000001
+        },
+        {
+          "node": "c0000-clev-re0",
+          "interface": "GigabitEthernet0/2",
+          "address": "198.18.0.20/31",
+          "remote": "c0000-newy-re0",
+          "peer_ip": "198.18.0.21",
+          "remote_as": 4200000006
+        },
+        {
+          "node": "c0000-clev-re0",
+          "interface": "GigabitEthernet0/3",
+          "address": "198.18.0.22/31",
+          "remote": "c0000-wash-re0",
+          "peer_ip": "198.18.0.23",
+          "remote_as": 4200000009
+        }
+      ]
+    },
+    "c0000-hous-re0": {
+      "copy": 0,
+      "base_node": "hous-re0",
+      "asn": 4200000003,
+      "router_id": "172.16.0.4",
+      "prefixes": [
+        "10.0.0.4/32"
+      ],
+      "interfaces": [
+        {
+          "node": "c0000-hous-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.5/31",
+          "remote": "c0000-atla-re0",
+          "peer_ip": "198.18.0.4",
+          "remote_as": 4200000000
+        },
+        {
+          "node": "c0000-hous-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.24/31",
+          "remote": "c0000-kans-re0",
+          "peer_ip": "198.18.0.25",
+          "remote_as": 4200000004
+        },
+        {
+          "node": "c0000-hous-re0",
+          "interface": "GigabitEthernet0/2",
+          "address": "198.18.0.26/31",
+          "remote": "c0000-losa-re0",
+          "peer_ip": "198.18.0.27",
+          "remote_as": 4200000005
+        }
+      ]
+    },
+    "c0000-kans-re0": {
+      "copy": 0,
+      "base_node": "kans-re0",
+      "asn": 4200000004,
+      "router_id": "172.16.0.5",
+      "prefixes": [
+        "10.0.0.5/32"
+      ],
+      "interfaces": [
+        {
+          "node": "c0000-kans-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.15/31",
+          "remote": "c0000-chic-re0",
+          "peer_ip": "198.18.0.14",
+          "remote_as": 4200000001
+        },
+        {
+          "node": "c0000-kans-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.25/31",
+          "remote": "c0000-hous-re0",
+          "peer_ip": "198.18.0.24",
+          "remote_as": 4200000003
+        },
+        {
+          "node": "c0000-kans-re0",
+          "interface": "GigabitEthernet0/2",
+          "address": "198.18.0.28/31",
+          "remote": "c0000-salt-re0",
+          "peer_ip": "198.18.0.29",
+          "remote_as": 4200000007
+        }
+      ]
+    },
+    "c0000-losa-re0": {
+      "copy": 0,
+      "base_node": "losa-re0",
+      "asn": 4200000005,
+      "router_id": "172.16.0.6",
+      "prefixes": [
+        "10.0.0.6/32"
+      ],
+      "interfaces": [
+        {
+          "node": "c0000-losa-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.27/31",
+          "remote": "c0000-hous-re0",
+          "peer_ip": "198.18.0.26",
+          "remote_as": 4200000003
+        },
+        {
+          "node": "c0000-losa-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.30/31",
+          "remote": "c0000-salt-re0",
+          "peer_ip": "198.18.0.31",
+          "remote_as": 4200000007
+        },
+        {
+          "node": "c0000-losa-re0",
+          "interface": "GigabitEthernet0/2",
+          "address": "198.18.0.32/31",
+          "remote": "c0000-seat-re0",
+          "peer_ip": "198.18.0.33",
+          "remote_as": 4200000008
+        },
+        {
+          "node": "c0000-losa-re0",
+          "interface": "GigabitEthernet0/3",
+          "address": "198.18.0.34/31",
+          "remote": "c0000-wash-re0",
+          "peer_ip": "198.18.0.35",
+          "remote_as": 4200000009
+        }
+      ]
+    },
+    "c0000-newy-re0": {
+      "copy": 0,
+      "base_node": "newy-re0",
+      "asn": 4200000006,
+      "router_id": "172.16.0.7",
+      "prefixes": [
+        "10.0.0.7/32"
+      ],
+      "interfaces": [
+        {
+          "node": "c0000-newy-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.7/31",
+          "remote": "c0000-atla-re0",
+          "peer_ip": "198.18.0.6",
+          "remote_as": 4200000000
+        },
+        {
+          "node": "c0000-newy-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.17/31",
+          "remote": "c0000-chic-re0",
+          "peer_ip": "198.18.0.16",
+          "remote_as": 4200000001
+        },
+        {
+          "node": "c0000-newy-re0",
+          "interface": "GigabitEthernet0/2",
+          "address": "198.18.0.21/31",
+          "remote": "c0000-clev-re0",
+          "peer_ip": "198.18.0.20",
+          "remote_as": 4200000002
+        },
+        {
+          "node": "c0000-newy-re0",
+          "interface": "GigabitEthernet0/3",
+          "address": "198.18.0.36/31",
+          "remote": "c0000-wash-re0",
+          "peer_ip": "198.18.0.37",
+          "remote_as": 4200000009
+        }
+      ]
+    },
+    "c0000-salt-re0": {
+      "copy": 0,
+      "base_node": "salt-re0",
+      "asn": 4200000007,
+      "router_id": "172.16.0.8",
+      "prefixes": [
+        "10.0.0.8/32"
+      ],
+      "interfaces": [
+        {
+          "node": "c0000-salt-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.29/31",
+          "remote": "c0000-kans-re0",
+          "peer_ip": "198.18.0.28",
+          "remote_as": 4200000004
+        },
+        {
+          "node": "c0000-salt-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.31/31",
+          "remote": "c0000-losa-re0",
+          "peer_ip": "198.18.0.30",
+          "remote_as": 4200000005
+        },
+        {
+          "node": "c0000-salt-re0",
+          "interface": "GigabitEthernet0/2",
+          "address": "198.18.0.38/31",
+          "remote": "c0000-seat-re0",
+          "peer_ip": "198.18.0.39",
+          "remote_as": 4200000008
+        }
+      ]
+    },
+    "c0000-seat-re0": {
+      "copy": 0,
+      "base_node": "seat-re0",
+      "asn": 4200000008,
+      "router_id": "172.16.0.9",
+      "prefixes": [
+        "10.0.0.9/32"
+      ],
+      "interfaces": [
+        {
+          "node": "c0000-seat-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.33/31",
+          "remote": "c0000-losa-re0",
+          "peer_ip": "198.18.0.32",
+          "remote_as": 4200000005
+        },
+        {
+          "node": "c0000-seat-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.39/31",
+          "remote": "c0000-salt-re0",
+          "peer_ip": "198.18.0.38",
+          "remote_as": 4200000007
+        }
+      ]
+    },
+    "c0000-wash-re0": {
+      "copy": 0,
+      "base_node": "wash-re0",
+      "asn": 4200000009,
+      "router_id": "172.16.0.10",
+      "prefixes": [
+        "10.0.0.10/32"
+      ],
+      "interfaces": [
+        {
+          "node": "c0000-wash-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.9/31",
+          "remote": "c0000-atla-re0",
+          "peer_ip": "198.18.0.8",
+          "remote_as": 4200000000
+        },
+        {
+          "node": "c0000-wash-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.19/31",
+          "remote": "c0000-chic-re0",
+          "peer_ip": "198.18.0.18",
+          "remote_as": 4200000001
+        },
+        {
+          "node": "c0000-wash-re0",
+          "interface": "GigabitEthernet0/2",
+          "address": "198.18.0.23/31",
+          "remote": "c0000-clev-re0",
+          "peer_ip": "198.18.0.22",
+          "remote_as": 4200000002
+        },
+        {
+          "node": "c0000-wash-re0",
+          "interface": "GigabitEthernet0/3",
+          "address": "198.18.0.35/31",
+          "remote": "c0000-losa-re0",
+          "peer_ip": "198.18.0.34",
+          "remote_as": 4200000005
+        },
+        {
+          "node": "c0000-wash-re0",
+          "interface": "GigabitEthernet0/4",
+          "address": "198.18.0.37/31",
+          "remote": "c0000-newy-re0",
+          "peer_ip": "198.18.0.36",
+          "remote_as": 4200000006
+        }
+      ]
+    },
+    "c0001-atla-re0": {
+      "copy": 1,
+      "base_node": "atla-re0",
+      "asn": 4200000010,
+      "router_id": "172.16.0.11",
+      "prefixes": [
+        "10.0.0.11/32"
+      ],
+      "interfaces": [
+        {
+          "node": "c0001-atla-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.40/31",
+          "remote": "c0001-chic-re0",
+          "peer_ip": "198.18.0.41",
+          "remote_as": 4200000011
+        },
+        {
+          "node": "c0001-atla-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.42/31",
+          "remote": "c0001-clev-re0",
+          "peer_ip": "198.18.0.43",
+          "remote_as": 4200000012
+        },
+        {
+          "node": "c0001-atla-re0",
+          "interface": "GigabitEthernet0/2",
+          "address": "198.18.0.44/31",
+          "remote": "c0001-hous-re0",
+          "peer_ip": "198.18.0.45",
+          "remote_as": 4200000013
+        },
+        {
+          "node": "c0001-atla-re0",
+          "interface": "GigabitEthernet0/3",
+          "address": "198.18.0.46/31",
+          "remote": "c0001-newy-re0",
+          "peer_ip": "198.18.0.47",
+          "remote_as": 4200000016
+        },
+        {
+          "node": "c0001-atla-re0",
+          "interface": "GigabitEthernet0/4",
+          "address": "198.18.0.48/31",
+          "remote": "c0001-wash-re0",
+          "peer_ip": "198.18.0.49",
+          "remote_as": 4200000019
+        }
+      ]
+    },
+    "c0001-chic-re0": {
+      "copy": 1,
+      "base_node": "chic-re0",
+      "asn": 4200000011,
+      "router_id": "172.16.0.12",
+      "prefixes": [
+        "10.0.0.12/32"
+      ],
+      "interfaces": [
+        {
+          "node": "c0001-chic-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.41/31",
+          "remote": "c0001-atla-re0",
+          "peer_ip": "198.18.0.40",
+          "remote_as": 4200000010
+        },
+        {
+          "node": "c0001-chic-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.50/31",
+          "remote": "c0001-clev-re0",
+          "peer_ip": "198.18.0.51",
+          "remote_as": 4200000012
+        },
+        {
+          "node": "c0001-chic-re0",
+          "interface": "GigabitEthernet0/2",
+          "address": "198.18.0.52/31",
+          "remote": "c0001-kans-re0",
+          "peer_ip": "198.18.0.53",
+          "remote_as": 4200000014
+        },
+        {
+          "node": "c0001-chic-re0",
+          "interface": "GigabitEthernet0/3",
+          "address": "198.18.0.54/31",
+          "remote": "c0001-newy-re0",
+          "peer_ip": "198.18.0.55",
+          "remote_as": 4200000016
+        },
+        {
+          "node": "c0001-chic-re0",
+          "interface": "GigabitEthernet0/4",
+          "address": "198.18.0.56/31",
+          "remote": "c0001-wash-re0",
+          "peer_ip": "198.18.0.57",
+          "remote_as": 4200000019
+        }
+      ]
+    },
+    "c0001-clev-re0": {
+      "copy": 1,
+      "base_node": "clev-re0",
+      "asn": 4200000012,
+      "router_id": "172.16.0.13",
+      "prefixes": [
+        "10.0.0.13/32"
+      ],
+      "interfaces": [
+        {
+          "node": "c0001-clev-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.43/31",
+          "remote": "c0001-atla-re0",
+          "peer_ip": "198.18.0.42",
+          "remote_as": 4200000010
+        },
+        {
+          "node": "c0001-clev-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.51/31",
+          "remote": "c0001-chic-re0",
+          "peer_ip": "198.18.0.50",
+          "remote_as": 4200000011
+        },
+        {
+          "node": "c0001-clev-re0",
+          "interface": "GigabitEthernet0/2",
+          "address": "198.18.0.58/31",
+          "remote": "c0001-newy-re0",
+          "peer_ip": "198.18.0.59",
+          "remote_as": 4200000016
+        },
+        {
+          "node": "c0001-clev-re0",
+          "interface": "GigabitEthernet0/3",
+          "address": "198.18.0.60/31",
+          "remote": "c0001-wash-re0",
+          "peer_ip": "198.18.0.61",
+          "remote_as": 4200000019
+        }
+      ]
+    },
+    "c0001-hous-re0": {
+      "copy": 1,
+      "base_node": "hous-re0",
+      "asn": 4200000013,
+      "router_id": "172.16.0.14",
+      "prefixes": [
+        "10.0.0.14/32"
+      ],
+      "interfaces": [
+        {
+          "node": "c0001-hous-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.45/31",
+          "remote": "c0001-atla-re0",
+          "peer_ip": "198.18.0.44",
+          "remote_as": 4200000010
+        },
+        {
+          "node": "c0001-hous-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.62/31",
+          "remote": "c0001-kans-re0",
+          "peer_ip": "198.18.0.63",
+          "remote_as": 4200000014
+        },
+        {
+          "node": "c0001-hous-re0",
+          "interface": "GigabitEthernet0/2",
+          "address": "198.18.0.64/31",
+          "remote": "c0001-losa-re0",
+          "peer_ip": "198.18.0.65",
+          "remote_as": 4200000015
+        }
+      ]
+    },
+    "c0001-kans-re0": {
+      "copy": 1,
+      "base_node": "kans-re0",
+      "asn": 4200000014,
+      "router_id": "172.16.0.15",
+      "prefixes": [
+        "10.0.0.15/32"
+      ],
+      "interfaces": [
+        {
+          "node": "c0001-kans-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.53/31",
+          "remote": "c0001-chic-re0",
+          "peer_ip": "198.18.0.52",
+          "remote_as": 4200000011
+        },
+        {
+          "node": "c0001-kans-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.63/31",
+          "remote": "c0001-hous-re0",
+          "peer_ip": "198.18.0.62",
+          "remote_as": 4200000013
+        },
+        {
+          "node": "c0001-kans-re0",
+          "interface": "GigabitEthernet0/2",
+          "address": "198.18.0.66/31",
+          "remote": "c0001-salt-re0",
+          "peer_ip": "198.18.0.67",
+          "remote_as": 4200000017
+        }
+      ]
+    },
+    "c0001-losa-re0": {
+      "copy": 1,
+      "base_node": "losa-re0",
+      "asn": 4200000015,
+      "router_id": "172.16.0.16",
+      "prefixes": [
+        "10.0.0.16/32"
+      ],
+      "interfaces": [
+        {
+          "node": "c0001-losa-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.65/31",
+          "remote": "c0001-hous-re0",
+          "peer_ip": "198.18.0.64",
+          "remote_as": 4200000013
+        },
+        {
+          "node": "c0001-losa-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.68/31",
+          "remote": "c0001-salt-re0",
+          "peer_ip": "198.18.0.69",
+          "remote_as": 4200000017
+        },
+        {
+          "node": "c0001-losa-re0",
+          "interface": "GigabitEthernet0/2",
+          "address": "198.18.0.70/31",
+          "remote": "c0001-seat-re0",
+          "peer_ip": "198.18.0.71",
+          "remote_as": 4200000018
+        },
+        {
+          "node": "c0001-losa-re0",
+          "interface": "GigabitEthernet0/3",
+          "address": "198.18.0.72/31",
+          "remote": "c0001-wash-re0",
+          "peer_ip": "198.18.0.73",
+          "remote_as": 4200000019
+        }
+      ]
+    },
+    "c0001-newy-re0": {
+      "copy": 1,
+      "base_node": "newy-re0",
+      "asn": 4200000016,
+      "router_id": "172.16.0.17",
+      "prefixes": [
+        "10.0.0.17/32"
+      ],
+      "interfaces": [
+        {
+          "node": "c0001-newy-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.11/31",
+          "remote": "c0000-atla-re0",
+          "peer_ip": "198.18.0.10",
+          "remote_as": 4200000000
+        },
+        {
+          "node": "c0001-newy-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.47/31",
+          "remote": "c0001-atla-re0",
+          "peer_ip": "198.18.0.46",
+          "remote_as": 4200000010
+        },
+        {
+          "node": "c0001-newy-re0",
+          "interface": "GigabitEthernet0/2",
+          "address": "198.18.0.55/31",
+          "remote": "c0001-chic-re0",
+          "peer_ip": "198.18.0.54",
+          "remote_as": 4200000011
+        },
+        {
+          "node": "c0001-newy-re0",
+          "interface": "GigabitEthernet0/3",
+          "address": "198.18.0.59/31",
+          "remote": "c0001-clev-re0",
+          "peer_ip": "198.18.0.58",
+          "remote_as": 4200000012
+        },
+        {
+          "node": "c0001-newy-re0",
+          "interface": "GigabitEthernet0/4",
+          "address": "198.18.0.74/31",
+          "remote": "c0001-wash-re0",
+          "peer_ip": "198.18.0.75",
+          "remote_as": 4200000019
+        }
+      ]
+    },
+    "c0001-salt-re0": {
+      "copy": 1,
+      "base_node": "salt-re0",
+      "asn": 4200000017,
+      "router_id": "172.16.0.18",
+      "prefixes": [
+        "10.0.0.18/32"
+      ],
+      "interfaces": [
+        {
+          "node": "c0001-salt-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.67/31",
+          "remote": "c0001-kans-re0",
+          "peer_ip": "198.18.0.66",
+          "remote_as": 4200000014
+        },
+        {
+          "node": "c0001-salt-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.69/31",
+          "remote": "c0001-losa-re0",
+          "peer_ip": "198.18.0.68",
+          "remote_as": 4200000015
+        },
+        {
+          "node": "c0001-salt-re0",
+          "interface": "GigabitEthernet0/2",
+          "address": "198.18.0.76/31",
+          "remote": "c0001-seat-re0",
+          "peer_ip": "198.18.0.77",
+          "remote_as": 4200000018
+        }
+      ]
+    },
+    "c0001-seat-re0": {
+      "copy": 1,
+      "base_node": "seat-re0",
+      "asn": 4200000018,
+      "router_id": "172.16.0.19",
+      "prefixes": [
+        "10.0.0.19/32"
+      ],
+      "interfaces": [
+        {
+          "node": "c0001-seat-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.71/31",
+          "remote": "c0001-losa-re0",
+          "peer_ip": "198.18.0.70",
+          "remote_as": 4200000015
+        },
+        {
+          "node": "c0001-seat-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.77/31",
+          "remote": "c0001-salt-re0",
+          "peer_ip": "198.18.0.76",
+          "remote_as": 4200000017
+        }
+      ]
+    },
+    "c0001-wash-re0": {
+      "copy": 1,
+      "base_node": "wash-re0",
+      "asn": 4200000019,
+      "router_id": "172.16.0.20",
+      "prefixes": [
+        "10.0.0.20/32"
+      ],
+      "interfaces": [
+        {
+          "node": "c0001-wash-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.49/31",
+          "remote": "c0001-atla-re0",
+          "peer_ip": "198.18.0.48",
+          "remote_as": 4200000010
+        },
+        {
+          "node": "c0001-wash-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.57/31",
+          "remote": "c0001-chic-re0",
+          "peer_ip": "198.18.0.56",
+          "remote_as": 4200000011
+        },
+        {
+          "node": "c0001-wash-re0",
+          "interface": "GigabitEthernet0/2",
+          "address": "198.18.0.61/31",
+          "remote": "c0001-clev-re0",
+          "peer_ip": "198.18.0.60",
+          "remote_as": 4200000012
+        },
+        {
+          "node": "c0001-wash-re0",
+          "interface": "GigabitEthernet0/3",
+          "address": "198.18.0.73/31",
+          "remote": "c0001-losa-re0",
+          "peer_ip": "198.18.0.72",
+          "remote_as": 4200000015
+        },
+        {
+          "node": "c0001-wash-re0",
+          "interface": "GigabitEthernet0/4",
+          "address": "198.18.0.75/31",
+          "remote": "c0001-newy-re0",
+          "peer_ip": "198.18.0.74",
+          "remote_as": 4200000016
+        }
+      ]
+    }
+  },
+  "links": [
+    {
+      "endpoints": [
+        {
+          "node": "c0000-atla-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.0/31",
+          "remote": "c0000-chic-re0",
+          "peer_ip": "198.18.0.1",
+          "remote_as": 4200000001
+        },
+        {
+          "node": "c0000-chic-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.1/31",
+          "remote": "c0000-atla-re0",
+          "peer_ip": "198.18.0.0",
+          "remote_as": 4200000000
+        }
+      ],
+      "intercopy": false
+    },
+    {
+      "endpoints": [
+        {
+          "node": "c0000-atla-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.2/31",
+          "remote": "c0000-clev-re0",
+          "peer_ip": "198.18.0.3",
+          "remote_as": 4200000002
+        },
+        {
+          "node": "c0000-clev-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.3/31",
+          "remote": "c0000-atla-re0",
+          "peer_ip": "198.18.0.2",
+          "remote_as": 4200000000
+        }
+      ],
+      "intercopy": false
+    },
+    {
+      "endpoints": [
+        {
+          "node": "c0000-atla-re0",
+          "interface": "GigabitEthernet0/2",
+          "address": "198.18.0.4/31",
+          "remote": "c0000-hous-re0",
+          "peer_ip": "198.18.0.5",
+          "remote_as": 4200000003
+        },
+        {
+          "node": "c0000-hous-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.5/31",
+          "remote": "c0000-atla-re0",
+          "peer_ip": "198.18.0.4",
+          "remote_as": 4200000000
+        }
+      ],
+      "intercopy": false
+    },
+    {
+      "endpoints": [
+        {
+          "node": "c0000-atla-re0",
+          "interface": "GigabitEthernet0/3",
+          "address": "198.18.0.6/31",
+          "remote": "c0000-newy-re0",
+          "peer_ip": "198.18.0.7",
+          "remote_as": 4200000006
+        },
+        {
+          "node": "c0000-newy-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.7/31",
+          "remote": "c0000-atla-re0",
+          "peer_ip": "198.18.0.6",
+          "remote_as": 4200000000
+        }
+      ],
+      "intercopy": false
+    },
+    {
+      "endpoints": [
+        {
+          "node": "c0000-atla-re0",
+          "interface": "GigabitEthernet0/4",
+          "address": "198.18.0.8/31",
+          "remote": "c0000-wash-re0",
+          "peer_ip": "198.18.0.9",
+          "remote_as": 4200000009
+        },
+        {
+          "node": "c0000-wash-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.9/31",
+          "remote": "c0000-atla-re0",
+          "peer_ip": "198.18.0.8",
+          "remote_as": 4200000000
+        }
+      ],
+      "intercopy": false
+    },
+    {
+      "endpoints": [
+        {
+          "node": "c0000-atla-re0",
+          "interface": "GigabitEthernet0/5",
+          "address": "198.18.0.10/31",
+          "remote": "c0001-newy-re0",
+          "peer_ip": "198.18.0.11",
+          "remote_as": 4200000016
+        },
+        {
+          "node": "c0001-newy-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.11/31",
+          "remote": "c0000-atla-re0",
+          "peer_ip": "198.18.0.10",
+          "remote_as": 4200000000
+        }
+      ],
+      "intercopy": true
+    },
+    {
+      "endpoints": [
+        {
+          "node": "c0000-chic-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.12/31",
+          "remote": "c0000-clev-re0",
+          "peer_ip": "198.18.0.13",
+          "remote_as": 4200000002
+        },
+        {
+          "node": "c0000-clev-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.13/31",
+          "remote": "c0000-chic-re0",
+          "peer_ip": "198.18.0.12",
+          "remote_as": 4200000001
+        }
+      ],
+      "intercopy": false
+    },
+    {
+      "endpoints": [
+        {
+          "node": "c0000-chic-re0",
+          "interface": "GigabitEthernet0/2",
+          "address": "198.18.0.14/31",
+          "remote": "c0000-kans-re0",
+          "peer_ip": "198.18.0.15",
+          "remote_as": 4200000004
+        },
+        {
+          "node": "c0000-kans-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.15/31",
+          "remote": "c0000-chic-re0",
+          "peer_ip": "198.18.0.14",
+          "remote_as": 4200000001
+        }
+      ],
+      "intercopy": false
+    },
+    {
+      "endpoints": [
+        {
+          "node": "c0000-chic-re0",
+          "interface": "GigabitEthernet0/3",
+          "address": "198.18.0.16/31",
+          "remote": "c0000-newy-re0",
+          "peer_ip": "198.18.0.17",
+          "remote_as": 4200000006
+        },
+        {
+          "node": "c0000-newy-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.17/31",
+          "remote": "c0000-chic-re0",
+          "peer_ip": "198.18.0.16",
+          "remote_as": 4200000001
+        }
+      ],
+      "intercopy": false
+    },
+    {
+      "endpoints": [
+        {
+          "node": "c0000-chic-re0",
+          "interface": "GigabitEthernet0/4",
+          "address": "198.18.0.18/31",
+          "remote": "c0000-wash-re0",
+          "peer_ip": "198.18.0.19",
+          "remote_as": 4200000009
+        },
+        {
+          "node": "c0000-wash-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.19/31",
+          "remote": "c0000-chic-re0",
+          "peer_ip": "198.18.0.18",
+          "remote_as": 4200000001
+        }
+      ],
+      "intercopy": false
+    },
+    {
+      "endpoints": [
+        {
+          "node": "c0000-clev-re0",
+          "interface": "GigabitEthernet0/2",
+          "address": "198.18.0.20/31",
+          "remote": "c0000-newy-re0",
+          "peer_ip": "198.18.0.21",
+          "remote_as": 4200000006
+        },
+        {
+          "node": "c0000-newy-re0",
+          "interface": "GigabitEthernet0/2",
+          "address": "198.18.0.21/31",
+          "remote": "c0000-clev-re0",
+          "peer_ip": "198.18.0.20",
+          "remote_as": 4200000002
+        }
+      ],
+      "intercopy": false
+    },
+    {
+      "endpoints": [
+        {
+          "node": "c0000-clev-re0",
+          "interface": "GigabitEthernet0/3",
+          "address": "198.18.0.22/31",
+          "remote": "c0000-wash-re0",
+          "peer_ip": "198.18.0.23",
+          "remote_as": 4200000009
+        },
+        {
+          "node": "c0000-wash-re0",
+          "interface": "GigabitEthernet0/2",
+          "address": "198.18.0.23/31",
+          "remote": "c0000-clev-re0",
+          "peer_ip": "198.18.0.22",
+          "remote_as": 4200000002
+        }
+      ],
+      "intercopy": false
+    },
+    {
+      "endpoints": [
+        {
+          "node": "c0000-hous-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.24/31",
+          "remote": "c0000-kans-re0",
+          "peer_ip": "198.18.0.25",
+          "remote_as": 4200000004
+        },
+        {
+          "node": "c0000-kans-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.25/31",
+          "remote": "c0000-hous-re0",
+          "peer_ip": "198.18.0.24",
+          "remote_as": 4200000003
+        }
+      ],
+      "intercopy": false
+    },
+    {
+      "endpoints": [
+        {
+          "node": "c0000-hous-re0",
+          "interface": "GigabitEthernet0/2",
+          "address": "198.18.0.26/31",
+          "remote": "c0000-losa-re0",
+          "peer_ip": "198.18.0.27",
+          "remote_as": 4200000005
+        },
+        {
+          "node": "c0000-losa-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.27/31",
+          "remote": "c0000-hous-re0",
+          "peer_ip": "198.18.0.26",
+          "remote_as": 4200000003
+        }
+      ],
+      "intercopy": false
+    },
+    {
+      "endpoints": [
+        {
+          "node": "c0000-kans-re0",
+          "interface": "GigabitEthernet0/2",
+          "address": "198.18.0.28/31",
+          "remote": "c0000-salt-re0",
+          "peer_ip": "198.18.0.29",
+          "remote_as": 4200000007
+        },
+        {
+          "node": "c0000-salt-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.29/31",
+          "remote": "c0000-kans-re0",
+          "peer_ip": "198.18.0.28",
+          "remote_as": 4200000004
+        }
+      ],
+      "intercopy": false
+    },
+    {
+      "endpoints": [
+        {
+          "node": "c0000-losa-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.30/31",
+          "remote": "c0000-salt-re0",
+          "peer_ip": "198.18.0.31",
+          "remote_as": 4200000007
+        },
+        {
+          "node": "c0000-salt-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.31/31",
+          "remote": "c0000-losa-re0",
+          "peer_ip": "198.18.0.30",
+          "remote_as": 4200000005
+        }
+      ],
+      "intercopy": false
+    },
+    {
+      "endpoints": [
+        {
+          "node": "c0000-losa-re0",
+          "interface": "GigabitEthernet0/2",
+          "address": "198.18.0.32/31",
+          "remote": "c0000-seat-re0",
+          "peer_ip": "198.18.0.33",
+          "remote_as": 4200000008
+        },
+        {
+          "node": "c0000-seat-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.33/31",
+          "remote": "c0000-losa-re0",
+          "peer_ip": "198.18.0.32",
+          "remote_as": 4200000005
+        }
+      ],
+      "intercopy": false
+    },
+    {
+      "endpoints": [
+        {
+          "node": "c0000-losa-re0",
+          "interface": "GigabitEthernet0/3",
+          "address": "198.18.0.34/31",
+          "remote": "c0000-wash-re0",
+          "peer_ip": "198.18.0.35",
+          "remote_as": 4200000009
+        },
+        {
+          "node": "c0000-wash-re0",
+          "interface": "GigabitEthernet0/3",
+          "address": "198.18.0.35/31",
+          "remote": "c0000-losa-re0",
+          "peer_ip": "198.18.0.34",
+          "remote_as": 4200000005
+        }
+      ],
+      "intercopy": false
+    },
+    {
+      "endpoints": [
+        {
+          "node": "c0000-newy-re0",
+          "interface": "GigabitEthernet0/3",
+          "address": "198.18.0.36/31",
+          "remote": "c0000-wash-re0",
+          "peer_ip": "198.18.0.37",
+          "remote_as": 4200000009
+        },
+        {
+          "node": "c0000-wash-re0",
+          "interface": "GigabitEthernet0/4",
+          "address": "198.18.0.37/31",
+          "remote": "c0000-newy-re0",
+          "peer_ip": "198.18.0.36",
+          "remote_as": 4200000006
+        }
+      ],
+      "intercopy": false
+    },
+    {
+      "endpoints": [
+        {
+          "node": "c0000-salt-re0",
+          "interface": "GigabitEthernet0/2",
+          "address": "198.18.0.38/31",
+          "remote": "c0000-seat-re0",
+          "peer_ip": "198.18.0.39",
+          "remote_as": 4200000008
+        },
+        {
+          "node": "c0000-seat-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.39/31",
+          "remote": "c0000-salt-re0",
+          "peer_ip": "198.18.0.38",
+          "remote_as": 4200000007
+        }
+      ],
+      "intercopy": false
+    },
+    {
+      "endpoints": [
+        {
+          "node": "c0001-atla-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.40/31",
+          "remote": "c0001-chic-re0",
+          "peer_ip": "198.18.0.41",
+          "remote_as": 4200000011
+        },
+        {
+          "node": "c0001-chic-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.41/31",
+          "remote": "c0001-atla-re0",
+          "peer_ip": "198.18.0.40",
+          "remote_as": 4200000010
+        }
+      ],
+      "intercopy": false
+    },
+    {
+      "endpoints": [
+        {
+          "node": "c0001-atla-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.42/31",
+          "remote": "c0001-clev-re0",
+          "peer_ip": "198.18.0.43",
+          "remote_as": 4200000012
+        },
+        {
+          "node": "c0001-clev-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.43/31",
+          "remote": "c0001-atla-re0",
+          "peer_ip": "198.18.0.42",
+          "remote_as": 4200000010
+        }
+      ],
+      "intercopy": false
+    },
+    {
+      "endpoints": [
+        {
+          "node": "c0001-atla-re0",
+          "interface": "GigabitEthernet0/2",
+          "address": "198.18.0.44/31",
+          "remote": "c0001-hous-re0",
+          "peer_ip": "198.18.0.45",
+          "remote_as": 4200000013
+        },
+        {
+          "node": "c0001-hous-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.45/31",
+          "remote": "c0001-atla-re0",
+          "peer_ip": "198.18.0.44",
+          "remote_as": 4200000010
+        }
+      ],
+      "intercopy": false
+    },
+    {
+      "endpoints": [
+        {
+          "node": "c0001-atla-re0",
+          "interface": "GigabitEthernet0/3",
+          "address": "198.18.0.46/31",
+          "remote": "c0001-newy-re0",
+          "peer_ip": "198.18.0.47",
+          "remote_as": 4200000016
+        },
+        {
+          "node": "c0001-newy-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.47/31",
+          "remote": "c0001-atla-re0",
+          "peer_ip": "198.18.0.46",
+          "remote_as": 4200000010
+        }
+      ],
+      "intercopy": false
+    },
+    {
+      "endpoints": [
+        {
+          "node": "c0001-atla-re0",
+          "interface": "GigabitEthernet0/4",
+          "address": "198.18.0.48/31",
+          "remote": "c0001-wash-re0",
+          "peer_ip": "198.18.0.49",
+          "remote_as": 4200000019
+        },
+        {
+          "node": "c0001-wash-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.49/31",
+          "remote": "c0001-atla-re0",
+          "peer_ip": "198.18.0.48",
+          "remote_as": 4200000010
+        }
+      ],
+      "intercopy": false
+    },
+    {
+      "endpoints": [
+        {
+          "node": "c0001-chic-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.50/31",
+          "remote": "c0001-clev-re0",
+          "peer_ip": "198.18.0.51",
+          "remote_as": 4200000012
+        },
+        {
+          "node": "c0001-clev-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.51/31",
+          "remote": "c0001-chic-re0",
+          "peer_ip": "198.18.0.50",
+          "remote_as": 4200000011
+        }
+      ],
+      "intercopy": false
+    },
+    {
+      "endpoints": [
+        {
+          "node": "c0001-chic-re0",
+          "interface": "GigabitEthernet0/2",
+          "address": "198.18.0.52/31",
+          "remote": "c0001-kans-re0",
+          "peer_ip": "198.18.0.53",
+          "remote_as": 4200000014
+        },
+        {
+          "node": "c0001-kans-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.53/31",
+          "remote": "c0001-chic-re0",
+          "peer_ip": "198.18.0.52",
+          "remote_as": 4200000011
+        }
+      ],
+      "intercopy": false
+    },
+    {
+      "endpoints": [
+        {
+          "node": "c0001-chic-re0",
+          "interface": "GigabitEthernet0/3",
+          "address": "198.18.0.54/31",
+          "remote": "c0001-newy-re0",
+          "peer_ip": "198.18.0.55",
+          "remote_as": 4200000016
+        },
+        {
+          "node": "c0001-newy-re0",
+          "interface": "GigabitEthernet0/2",
+          "address": "198.18.0.55/31",
+          "remote": "c0001-chic-re0",
+          "peer_ip": "198.18.0.54",
+          "remote_as": 4200000011
+        }
+      ],
+      "intercopy": false
+    },
+    {
+      "endpoints": [
+        {
+          "node": "c0001-chic-re0",
+          "interface": "GigabitEthernet0/4",
+          "address": "198.18.0.56/31",
+          "remote": "c0001-wash-re0",
+          "peer_ip": "198.18.0.57",
+          "remote_as": 4200000019
+        },
+        {
+          "node": "c0001-wash-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.57/31",
+          "remote": "c0001-chic-re0",
+          "peer_ip": "198.18.0.56",
+          "remote_as": 4200000011
+        }
+      ],
+      "intercopy": false
+    },
+    {
+      "endpoints": [
+        {
+          "node": "c0001-clev-re0",
+          "interface": "GigabitEthernet0/2",
+          "address": "198.18.0.58/31",
+          "remote": "c0001-newy-re0",
+          "peer_ip": "198.18.0.59",
+          "remote_as": 4200000016
+        },
+        {
+          "node": "c0001-newy-re0",
+          "interface": "GigabitEthernet0/3",
+          "address": "198.18.0.59/31",
+          "remote": "c0001-clev-re0",
+          "peer_ip": "198.18.0.58",
+          "remote_as": 4200000012
+        }
+      ],
+      "intercopy": false
+    },
+    {
+      "endpoints": [
+        {
+          "node": "c0001-clev-re0",
+          "interface": "GigabitEthernet0/3",
+          "address": "198.18.0.60/31",
+          "remote": "c0001-wash-re0",
+          "peer_ip": "198.18.0.61",
+          "remote_as": 4200000019
+        },
+        {
+          "node": "c0001-wash-re0",
+          "interface": "GigabitEthernet0/2",
+          "address": "198.18.0.61/31",
+          "remote": "c0001-clev-re0",
+          "peer_ip": "198.18.0.60",
+          "remote_as": 4200000012
+        }
+      ],
+      "intercopy": false
+    },
+    {
+      "endpoints": [
+        {
+          "node": "c0001-hous-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.62/31",
+          "remote": "c0001-kans-re0",
+          "peer_ip": "198.18.0.63",
+          "remote_as": 4200000014
+        },
+        {
+          "node": "c0001-kans-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.63/31",
+          "remote": "c0001-hous-re0",
+          "peer_ip": "198.18.0.62",
+          "remote_as": 4200000013
+        }
+      ],
+      "intercopy": false
+    },
+    {
+      "endpoints": [
+        {
+          "node": "c0001-hous-re0",
+          "interface": "GigabitEthernet0/2",
+          "address": "198.18.0.64/31",
+          "remote": "c0001-losa-re0",
+          "peer_ip": "198.18.0.65",
+          "remote_as": 4200000015
+        },
+        {
+          "node": "c0001-losa-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.65/31",
+          "remote": "c0001-hous-re0",
+          "peer_ip": "198.18.0.64",
+          "remote_as": 4200000013
+        }
+      ],
+      "intercopy": false
+    },
+    {
+      "endpoints": [
+        {
+          "node": "c0001-kans-re0",
+          "interface": "GigabitEthernet0/2",
+          "address": "198.18.0.66/31",
+          "remote": "c0001-salt-re0",
+          "peer_ip": "198.18.0.67",
+          "remote_as": 4200000017
+        },
+        {
+          "node": "c0001-salt-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.67/31",
+          "remote": "c0001-kans-re0",
+          "peer_ip": "198.18.0.66",
+          "remote_as": 4200000014
+        }
+      ],
+      "intercopy": false
+    },
+    {
+      "endpoints": [
+        {
+          "node": "c0001-losa-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.68/31",
+          "remote": "c0001-salt-re0",
+          "peer_ip": "198.18.0.69",
+          "remote_as": 4200000017
+        },
+        {
+          "node": "c0001-salt-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.69/31",
+          "remote": "c0001-losa-re0",
+          "peer_ip": "198.18.0.68",
+          "remote_as": 4200000015
+        }
+      ],
+      "intercopy": false
+    },
+    {
+      "endpoints": [
+        {
+          "node": "c0001-losa-re0",
+          "interface": "GigabitEthernet0/2",
+          "address": "198.18.0.70/31",
+          "remote": "c0001-seat-re0",
+          "peer_ip": "198.18.0.71",
+          "remote_as": 4200000018
+        },
+        {
+          "node": "c0001-seat-re0",
+          "interface": "GigabitEthernet0/0",
+          "address": "198.18.0.71/31",
+          "remote": "c0001-losa-re0",
+          "peer_ip": "198.18.0.70",
+          "remote_as": 4200000015
+        }
+      ],
+      "intercopy": false
+    },
+    {
+      "endpoints": [
+        {
+          "node": "c0001-losa-re0",
+          "interface": "GigabitEthernet0/3",
+          "address": "198.18.0.72/31",
+          "remote": "c0001-wash-re0",
+          "peer_ip": "198.18.0.73",
+          "remote_as": 4200000019
+        },
+        {
+          "node": "c0001-wash-re0",
+          "interface": "GigabitEthernet0/3",
+          "address": "198.18.0.73/31",
+          "remote": "c0001-losa-re0",
+          "peer_ip": "198.18.0.72",
+          "remote_as": 4200000015
+        }
+      ],
+      "intercopy": false
+    },
+    {
+      "endpoints": [
+        {
+          "node": "c0001-newy-re0",
+          "interface": "GigabitEthernet0/4",
+          "address": "198.18.0.74/31",
+          "remote": "c0001-wash-re0",
+          "peer_ip": "198.18.0.75",
+          "remote_as": 4200000019
+        },
+        {
+          "node": "c0001-wash-re0",
+          "interface": "GigabitEthernet0/4",
+          "address": "198.18.0.75/31",
+          "remote": "c0001-newy-re0",
+          "peer_ip": "198.18.0.74",
+          "remote_as": 4200000016
+        }
+      ],
+      "intercopy": false
+    },
+    {
+      "endpoints": [
+        {
+          "node": "c0001-salt-re0",
+          "interface": "GigabitEthernet0/2",
+          "address": "198.18.0.76/31",
+          "remote": "c0001-seat-re0",
+          "peer_ip": "198.18.0.77",
+          "remote_as": 4200000018
+        },
+        {
+          "node": "c0001-seat-re0",
+          "interface": "GigabitEthernet0/1",
+          "address": "198.18.0.77/31",
+          "remote": "c0001-salt-re0",
+          "peer_ip": "198.18.0.76",
+          "remote_as": 4200000017
+        }
+      ],
+      "intercopy": false
+    }
+  ]
+}
